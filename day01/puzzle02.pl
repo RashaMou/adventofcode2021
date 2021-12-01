@@ -3,18 +3,7 @@ use warnings;
 use Path::Tiny;
 
 my @input = path('puzzle01-input')->lines;
-#my @input = qw(
-#  199
-#  200
-#  208
-#  210
-#  200
-#  207
-#  240
-#  269
-#  260
-#  263
-#);
+
 my $increase_count = 0;
 my $current_sum = 0;
 my $sum;        
