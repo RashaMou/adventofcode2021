@@ -12,13 +12,7 @@ my %directions = (
 
 for (@input) {
   my @line = split(" ", $_);
-  if ($line[0] eq "forward"){
-    $directions{forward} += $line[1];
-  } elsif ($line[0] eq "up") {
-    $directions{up} += $line[1];
-  } else {
-    $directions{down} += $line[1];
-  }
+  $directions{$line[0]} += $line[1];
 };
 
 my $total = $directions{forward} * ($directions{down} - $directions{up});
